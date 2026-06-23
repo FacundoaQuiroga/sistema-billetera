@@ -53,3 +53,25 @@ export async function getWallet(walletId) {
 
   return response.json()
 }
+
+export async function createUser(fullName, email, password) {
+  const response = await fetch(`${API_URL}/users`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      fullName,
+      email,
+      password,
+    }),
+  })
+
+  const data = await response.json()
+
+  if (!response.ok) {
+    throw new Error(data.message || 'Error creating user')
+  }
+
+  return data
+}

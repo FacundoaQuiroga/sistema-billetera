@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import TransactionList from './components/TransactionList'
-import { depositToWallet,getWallet,getWalletTransactions,transferMoney } from './services/walletApi'
+import { createUser,depositToWallet,getWallet,getWalletTransactions,transferMoney } from './services/walletApi'
 import DepositForm from './components/DepositForm'
 import TransferForm from './components/TransferForm'
 import WalletSummary from './components/WalletSummary'
-
+import CreateUserForm from './components/CreateUserForm'
 
 function App() {
   const [transactions, setTransactions] = useState([])
@@ -57,6 +57,16 @@ function handleTransfer(receiverWalletId, amount) {
     })
 }
 
+function handleCreateUser(fullName, email, password) {
+  createUser(fullName, email, password)
+    .then((user) => {
+      alert(`User created: ${user.email}`)
+    })
+    .catch((error) => {
+      setError(error.message)
+    })
+}
+
   return (
   <main className="dashboard">
     <header className="topbar">
@@ -73,6 +83,7 @@ function handleTransfer(receiverWalletId, amount) {
         <WalletSummary wallet={wallet} />
 
         <section className="actions-card">
+          <CreateUserForm onCreateUser={handleCreateUser} />
           <DepositForm onDeposit={handleDeposit} />
           <TransferForm onTransfer={handleTransfer} />
         </section>
