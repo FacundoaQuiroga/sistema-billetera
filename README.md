@@ -14,13 +14,15 @@ I added user registration, login with JWT, protected wallet routes, deposits, tr
 
 Java 21, Spring Boot, Spring Security, JWT, PostgreSQL, React, Vite, Docker, JUnit and Mockito.
 
-![Java](https://img.shields.io/badge/Java-21-red)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4-green)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-JWT-brightgreen)
-![React](https://img.shields.io/badge/React-Vite-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
-![Docker](https://img.shields.io/badge/Docker-Compose-blue)
-![JUnit](https://img.shields.io/badge/JUnit-Tests-green)
+[![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat&logo=openjdk&logoColor=white)](https://www.java.com)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4-6DB33F?style=flat&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Spring Security](https://img.shields.io/badge/Spring%20Security-JWT-6DB33F?style=flat&logo=springsecurity&logoColor=white)](https://spring.io/projects/spring-security)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat&logo=vite&logoColor=white)](https://vite.dev)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=flat&logo=postgresql&logoColor=white)](https://www.postgresql.org)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com)
+[![JUnit](https://img.shields.io/badge/JUnit-5-25A162?style=flat&logo=junit5&logoColor=white)](https://junit.org/junit5)
+[![Mockito](https://img.shields.io/badge/Mockito-Tests-78A641?style=flat&logo=mockito&logoColor=white)](https://site.mockito.org)
 
 ## Main Features
 
